@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>5 tricks for cmd</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Screenshot 2023-03-04 162742.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">LongVu CV</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html/#about">About</a></li>
+
+          <li><a class="nav-link scrollto " href="index.html/#work">Activities</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>MEMBERS and contact</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://discord.gg/avmW5PJZ">Members team Runrace</a></li>
+              <li class="dropdown"><a href="#"><span>full contact</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://www.facebook.com/profile.php?id=100037154946885">LongVu</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=100018062012913">VuQuang</a></li>
+                  <li><a href="https://www.facebook.com/Nghiadu0003">NghiaDinh(leader)</a></li>
+                  <li><a href="https://www.facebook.com/chien.em.180">VanChien</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=100013273273974">My manager</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Top 5 CMD tricks for newbie</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Library</a>
+            </li>
+            <li class="breadcrumb-item active">Data</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Blog Single Section ======= -->
+    <section class="blog-wrapper sect-pt4" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="post-box">
+              <div class="post-thumb">
+                <img src="assets/img/post-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="post-meta">
+                <h1 class="article-title">1.Sử dụng các phím Chức năng</h1>
+                <ul>
+                  <li>
+                    <span class="bi bi-person"></span>
+                    <a href="#">LongVu</a>
+                  </li>
+                  <li>
+                    <span class="bi bi-tag"></span>
+                    <a href="#">Blog1</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="article-content">
+                <p>
+                  Một trong những thủ thuật Command Prompt rất hữu ích là sử dụng các phím chức năng. Các phím này có thể làm rất nhiều điều trên CMD đấy:
+                </p>
+                <img src="assets/img/32.jpg" class="img-fluid" alt="">
+                <h1 class="article-title">2.Tạo điểm phát sóng Wi-Fi</h1>
+
+                <p>
+                 Trước khi mở Command Prompt để thực hiện các lệnh cần thiết cho việc này, bạn cần mở Control Panel và
+                  tìm Change adapter settings trong tùy chọn Network and Sharing. Tại đó, nhấp vào kết nối bạn đang sử
+                  dụng và nhấp vào Properties. Bây giờ, hãy tìm tab sharing và chọn “Allow other network users to connect
+                  through this computer’s internet connection.”
+                </p>
+                 <img src="assets/img/33.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                  <p>
+                    Bây giờ hãy mở Command Prompt bằng quyền admin và nhập lệnh sau:
+
+                    <h5>netsh wlan set hostednetwork mode=allow ssid=Yourhotspotname key=yourpassword</h5>
+                  </p>
+                  <p>
+                    Sau đó, hãy nhập lệnh sau để bắt đầu tạo điểm phát sóng Wi-Fi:
+                    <h5>netsh wlan start hostednetwork</h5>
+                    Để dừng điểm truy cập, chỉ cần nhập lệnh sau:
+                    <h5>netsh wlan stop hostednetwork</h5>
+                  </p>
+                <h1 class="article-title">3.Quét các tệp hệ thống để tìm sự cố</h1>
+                <p>
+                  Lệnh sfc / scannow sẽ chạy công cụ kiểm tra tệp hệ thống để quét các tệp hệ thống Windows và tìm kiếm
+                  sự cố. Nếu một số tệp bị thiếu hoặc bị hỏng, lệnh này sẽ sửa chúng.
+                </p>
+                <h5>sfc /scannow</h5>
+                <h1 class="article-title">4.Khắc phục sự cố với DNS resolver cache</h1>
+                <p>
+                  Bạn có thể biết rằng DNS (Hệ thống tên miền) là thứ cực kỳ quan trọng mà bạn không thể bỏ qua khi kết
+                  nối với internet. Để truy cập các trang web nhanh hơn, máy tính của bạn thường duy trì bộ nhớ cache của
+                  trình phân giải DNS cục bộ (DNS resolver cache). Nhưng đôi khi, bộ nhớ cache có thể bị hỏng và bạn không
+                  thể truy cập các trang web yêu thích của mình.
+                </p>
+                <p>
+                  Trong trường hợp đó, bạn có thể thử lệnh này để tiết kiệm thời gian.
+                  Bạn có thể sử dụng tiện ích Ipconfig để xóa bộ nhớ cache DNS.
+                </p>
+                <h5>ipconfig /flushdns</h5>
+                <h1 class="article-title">5.Thay thế CMD: Powershell và Windows Terminal</h1>
+                <p>
+                  Trong những năm qua, Microsoft đã bắt đầu chuyển từ Command Prompt cũ sang phiên bản kế nhiệm
+                  Powershell hiện đại. Nếu bạn có thể nhận ra, những nơi bạn có thể thấy CMD trước đó sẽ hiển thị tùy
+                  chọn Powershell vì đó là shell mặc định trong Windows 10. Ví dụ: trong menu ngữ cảnh của nút Start
+                </p>
+                <p>
+                  Hơn nữa, Microsoft đã phát triển một trải nghiệm dòng lệnh hoàn toàn mới dưới dạng một ứng dụng mới có
+                  tên là Windows Terminal. Nó kết hợp những thứ như Command Prompt, Powershell và Windows Subsystem for
+                  Linux.
+                </p>
+                <img src="assets/img/34.jpg" class="img-fluid" alt="">
+
+              </div>
+            </div>
+
+            <div class="form-comments">
+              <div class="title-box-2">
+                <h3 class="title-left">
+                  Leave a Reply
+                </h3>
+              </div>
+              <form class="form-mf">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-mf" id="inputName" placeholder="Name *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="email" class="form-control input-mf" id="inputEmail1" placeholder="Email *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="url" class="form-control input-mf" id="inputUrl" placeholder="Website">
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <textarea id="textMessage" class="form-control input-mf" placeholder="Comment *" name="message" cols="45" rows="8" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget-sidebar sidebar-search">
+              <h5 class="sidebar-title">Search</h5>
+              <div class="sidebar-content">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary btn-search" type="button">
+                        <span class="bi bi-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="widget-sidebar">
+              <h5 class="sidebar-title">Recent Post</h5>
+              <div class="sidebar-content">
+                <ul class="list-sidebar">
+                   <li>
+                    <a href="blog-single.html">Top 5 tricks CMD for newbie.</a>
+                  </li>
+                  <li>
+                    <a href="blog2.html">notable cybersecurity issues in 2023</a>
+                  </li>
+                  <li>
+                    <a href="#">Top 7 trends for the security industry in 2023</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="widget-sidebar widget-tags">
+              <h5 class="sidebar-title">Tags</h5>
+              <div class="sidebar-content">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/ispace.vn">#ISPACE</a>
+                  </li>
+                  <li>
+                    <a href="index.html">#WEBCV</a>
+                  </li>
+                  <li>
+                    <a href="activities5.html">#GAMING</a>
+                  </li>
+                  <li>
+                    <a href="activities6.html">#IT ACTIVITIES</a>
+                  </li>
+                  <li>
+                    <a href="index.html#about">#HTML DEVELOPMENT</a>
+                  </li>
+                  <li>
+                    <a href="#">#PYTHON</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">Thanks<strong>Runrace Team</strong>Supported/p>
+            <div class="credits">
+
+              Designed by <a href="https://www.facebook.com/profile.php?id=100037154946885">LongVu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
